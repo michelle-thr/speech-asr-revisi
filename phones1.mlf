@@ -417,7 +417,7 @@ s
 sp
 sil
 .
-"*/*sample11.lab"
+"*/sample11.lab"
 sil
 h
 aa
@@ -463,7 +463,7 @@ ng
 sp
 sil
 .
-"*/*sample12.lab"
+"*/sample12.lab"
 sil
 s
 aa
@@ -509,7 +509,7 @@ ih
 sp
 sil
 .
-"*/*sample13.lab"
+"*/sample13.lab"
 sil
 s
 aa
@@ -540,7 +540,7 @@ ng
 sp
 sil
 .
-"*/*sample14.lab"
+"*/sample14.lab"
 sil
 aa
 p
@@ -577,7 +577,7 @@ ih
 sp
 sil
 .
-"*/*sample15.lab"
+"*/sample15.lab"
 sil
 s
 aa
@@ -618,7 +618,7 @@ l
 sp
 sil
 .
-"*/*sample16.lab"
+"*/sample16.lab"
 sil
 p
 eh
@@ -646,7 +646,7 @@ ih
 sp
 sil
 .
-"*/*sample17.lab"
+"*/sample17.lab"
 sil
 m
 aa
@@ -694,7 +694,7 @@ m
 sp
 sil
 .
-"*/*sample18.lab"
+"*/sample18.lab"
 sil
 s
 ih
@@ -735,7 +735,7 @@ n
 sp
 sil
 .
-"*/*sample19.lab"
+"*/sample19.lab"
 sil
 p
 eh
@@ -770,7 +770,7 @@ r
 sp
 sil
 .
-"*/*sample20.lab"
+"*/sample20.lab"
 sil
 s
 aa
@@ -798,7 +798,7 @@ m
 sp
 sil
 .
-"*/*sample21.lab"
+"*/sample21.lab"
 sil
 p
 eh
@@ -840,7 +840,7 @@ aa
 sp
 sil
 .
-"*/*sample22.lab"
+"*/sample22.lab"
 sil
 p
 eh
@@ -881,7 +881,7 @@ m
 sp
 sil
 .
-"*/*sample23.lab"
+"*/sample23.lab"
 sil
 p
 eh
@@ -922,7 +922,7 @@ eh
 sp
 sil
 .
-"*/*sample24.lab"
+"*/sample24.lab"
 sil
 p
 eh
@@ -968,7 +968,7 @@ m
 sp
 sil
 .
-"*/*sample25.lab"
+"*/sample25.lab"
 sil
 p
 eh
@@ -1016,7 +1016,7 @@ n
 sp
 sil
 .
-"*/*sample26.lab"
+"*/sample26.lab"
 sil
 p
 eh
@@ -1061,7 +1061,7 @@ eh
 sp
 sil
 .
-"*/*sample27.lab"
+"*/sample27.lab"
 sil
 p
 eh
@@ -1105,7 +1105,7 @@ m
 sp
 sil
 .
-"*/*sample28.lab"
+"*/sample28.lab"
 sil
 p
 eh
@@ -1161,7 +1161,7 @@ ih
 sp
 sil
 .
-"*/*sample29.lab"
+"*/sample29.lab"
 sil
 m
 ih
@@ -1212,7 +1212,7 @@ ih
 sp
 sil
 .
-"*/*sample30.lab"
+"*/sample30.lab"
 sil
 p
 eh
@@ -1266,7 +1266,7 @@ r
 sp
 sil
 .
-"*/*sample31.lab"
+"*/sample31.lab"
 sil
 s
 aa
@@ -1303,7 +1303,7 @@ ih
 sp
 sil
 .
-"*/*sample32.lab"
+"*/sample32.lab"
 sil
 p
 eh
@@ -1336,7 +1336,7 @@ ih
 sp
 sil
 .
-"*/*sample33.lab"
+"*/sample33.lab"
 sil
 s
 ih
@@ -1369,7 +1369,7 @@ n
 sp
 sil
 .
-"*/*sample34.lab"
+"*/sample34.lab"
 sil
 m
 ih
@@ -1415,7 +1415,7 @@ ih
 sp
 sil
 .
-"*/*sample35.lab"
+"*/sample35.lab"
 sil
 p
 eh
@@ -1466,7 +1466,7 @@ ng
 sp
 sil
 .
-"*/*sample36.lab"
+"*/sample36.lab"
 sil
 s
 aa
@@ -1503,7 +1503,7 @@ ih
 sp
 sil
 .
-"*/*sample37.lab"
+"*/sample37.lab"
 sil
 t
 uw
@@ -1539,7 +1539,7 @@ ng
 sp
 sil
 .
-"*/*sample38.lab"
+"*/sample38.lab"
 sil
 m
 aa
@@ -1579,7 +1579,7 @@ ih
 sp
 sil
 .
-"*/*sample39.lab"
+"*/sample39.lab"
 sil
 p
 eh
@@ -1624,7 +1624,7 @@ ih
 sp
 sil
 .
-"*/*sample40.lab"
+"*/sample40.lab"
 sil
 p
 aa
@@ -1671,7 +1671,7 @@ ng
 sp
 sil
 .
-"*/*sample41.lab"
+"*/sample41.lab"
 sil
 p
 aa
@@ -1706,7 +1706,7 @@ ih
 sp
 sil
 .
-"*/*sample42.lab"
+"*/sample42.lab"
 sil
 m
 ih
@@ -1733,7 +1733,7 @@ m
 sp
 sil
 .
-"*/*sample43.lab"
+"*/sample43.lab"
 sil
 d
 ih
@@ -1770,7 +1770,7 @@ ih
 sp
 sil
 .
-"*/*sample44.lab"
+"*/sample44.lab"
 sil
 d
 ih
@@ -1806,7 +1806,7 @@ m
 sp
 sil
 .
-"*/*sample45.lab"
+"*/sample45.lab"
 sil
 aa
 y
@@ -1840,7 +1840,7 @@ t
 sp
 sil
 .
-"*/*sample46.lab"
+"*/sample46.lab"
 sil
 s
 eh
@@ -1877,7 +1877,7 @@ t
 sp
 sil
 .
-"*/*sample47.lab"
+"*/sample47.lab"
 sil
 p
 eh
@@ -1914,7 +1914,7 @@ k
 sp
 sil
 .
-"*/*sample48.lab"
+"*/sample48.lab"
 sil
 s
 eh
@@ -1947,7 +1947,7 @@ n
 sp
 sil
 .
-"*/*sample49.lab"
+"*/sample49.lab"
 sil
 uw
 n
@@ -1986,7 +1986,7 @@ l
 sp
 sil
 .
-"*/*sample50.lab"
+"*/sample50.lab"
 sil
 aa
 m
@@ -2024,7 +2024,7 @@ ng
 sp
 sil
 .
-"*/*sample51.lab"
+"*/sample51.lab"
 sil
 s
 ih
@@ -2053,7 +2053,7 @@ ih
 sp
 sil
 .
-"*/*sample52.lab"
+"*/sample52.lab"
 sil
 p
 eh
@@ -2100,7 +2100,7 @@ ng
 sp
 sil
 .
-"*/*sample53.lab"
+"*/sample53.lab"
 sil
 p
 eh
@@ -2138,7 +2138,7 @@ ih
 sp
 sil
 .
-"*/*sample54.lab"
+"*/sample54.lab"
 sil
 b
 uw
@@ -2172,7 +2172,7 @@ r
 sp
 sil
 .
-"*/*sample55.lab"
+"*/sample55.lab"
 sil
 d
 ih
@@ -2214,7 +2214,7 @@ ng
 sp
 sil
 .
-"*/*sample56.lab"
+"*/sample56.lab"
 sil
 p
 eh
@@ -2262,7 +2262,7 @@ r
 sp
 sil
 .
-"*/*sample57.lab"
+"*/sample57.lab"
 sil
 p
 eh
@@ -2305,7 +2305,7 @@ m
 sp
 sil
 .
-"*/*sample58.lab"
+"*/sample58.lab"
 sil
 p
 eh
