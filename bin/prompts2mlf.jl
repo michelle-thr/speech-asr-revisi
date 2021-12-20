@@ -16,56 +16,40 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
-
 if VERSION < v"1.0"  
    @warn("the VoxForge scripts require version 1.0 and above")
 end
 
-function mkclscript(monophones0, tree_hed, folder)
-  hmmlist=open(tree_hed,"a"); 
+function prompts2mlf(prompts, mlf) 
+  mlf=open(mlf,"w"); 
 
-  monophones0_arr=open(readlines, monophones0) 
-  for i=2:4
-    for phoneln=monophones0_arr
-      phone=chomp(phoneln)
-      write(hmmlist,"TB 350 \"ST_$(phone)_$(i)_\" {(\"$phone\",\"*-$(phone)+*\",\"$(phone)+*\",\"*-$phone\").state[$i]}\n") 
+  write(mlf,"#!MLF!#\n")
+  prompts_arr=open(readlines, prompts)    
+  for lineln=prompts_arr
+    line=chomp(lineln)
+    line_array=split(line,r"\s+"); 
+    fname=popfirst!(line_array)
+    write(mlf,"\"$fname.lab\"\n")
+    for word=line_array
+        write(mlf,"$word\n")
     end
+    write(mlf,".\n")
   end
 
-  write(hmmlist,"\n") 
-  write(hmmlist,"TR 1\n")
-  write(hmmlist,"\n") 
-  write(hmmlist,"AU \"$(folder)/fulllist\" \n")
-  write(hmmlist,"CO \"$(folder)/tiedlist\" \n")
-  write(hmmlist,"\n") 
-  write(hmmlist,"ST \"$(folder)/trees\" \n")
-
-  close(hmmlist)
+  close(mlf)
 end
 
 # if called from command line
 if length(ARGS) > 0 
   if ! isfile(ARGS[1])
-    error("can't find monophones0 file: $(ARGS[1])")
+    error("can't find prompts file: $ARGS[1]")
   end
-  if ! isfile(ARGS[2])
-    error("can't find tree.hed file: $(ARGS[2])")
+  if length(ARGS) <= 2 
+    prompts2mlf(ARGS[1],ARGS[2] )
+  else
+    error("prompts2list: too many arguments for call from command line")
   end
-  if length(ARGS) == 2
-    mkclscript(ARGS[1], ARGS[2], "." )
-  elseif length(ARGS) == 3
-    if ! isdir(ARGS[3])
-      error("can't find directory: $(ARGS[3])")
-    end
-
-    mkclscript(ARGS[1], ARGS[2], ARGS[3] )
-  end
-
-  if length(ARGS) > 3
-    error("mkclscript: too many arguments for call from command line")
-  end
-
-
+  
 end
 
 

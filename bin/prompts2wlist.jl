@@ -16,43 +16,58 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ###############################################################################
+using Printf
 
 if VERSION < v"1.0"  
    @warn("the VoxForge scripts require version 1.0 and above")
 end
 
-function fixfulllist(in_fulllist, in_monophones0, out_fulllist)
-  seen=Dict{String, Int32}()
-  in_fulllist_arr=open(readlines, in_fulllist) # automatically closes file handle
-  in_monophones0_arr=open(readlines, in_monophones0) # automatically closes file handle
-  new_fulllist_arr=cat(in_fulllist_arr, in_monophones0_arr, dims=1)
-
-  out_fulllist_fh=open(out_fulllist,"w")
-
-  for phoneln=new_fulllist_arr
-    phone=chomp(phoneln)
-    if ! haskey(seen,phone) # remove duplicate monophone/triphone names
-      seen[phone]=1
-      write(out_fulllist_fh,phone * "\n")
-    end
+function prompts2wlist(prompts, wlist)
+  if ! isfile(prompts)
+    error("can't find prompts file: $prompts")
   end
 
-  close(out_fulllist_fh)
+  wordhash = Dict{String, Int32}()
+  prompts_fh=open(readlines, prompts)    
+  for lineln=prompts_fh
+    line=chomp(lineln)
+    line_array=split(line,r"\s+"); 
+    popfirst!(line_array)
+    for word=line_array
+      wordhash[word]=1
+    end
+  end
+  wordhash["SENT-END"]=1
+  wordhash["SENT-START"]=1
+
+  wordlist = keys(wordhash) # returns an iterator
+  wlist_arr=Array{String}(undef,length(wordhash))
+  i=1
+  for word=wordlist
+    wlist_arr[i] = word * "\n"
+    i=i+1
+  end
+  sortedwlist_arr=sort(wlist_arr)
+
+  wlist_fh=open(wlist,"w"); 
+  #write(wlist_fh, serialize(sortedwlist_arr) ); 
+  for line=sortedwlist_arr
+    write(wlist_fh,line)
+  end
+  close(wlist_fh)  
 end
 
 # if called from command line
 if length(ARGS) > 0 
   if ! isfile(ARGS[1])
-    error("can't find fulllist file: $ARGS[1]")
+    error("can't find prompts file: $ARGS[1]")
   end
-  if ! isfile(ARGS[2])
-    error("can't find monophones0 file: $ARGS[2]")
+  if length(ARGS) <= 2 
+    prompts2wlist(ARGS[1],ARGS[2] )
+  else
+    error("prompts2list: too many arguments for call from command line")
   end
-  if length(ARGS) > 3
-    error("fixfulllist: too many arguments for call from command line\nusage: in_fulllist, in_monophones0, out_fulllist")
-  end
-
-  fixfulllist(ARGS[1], ARGS[2], ARGS[3])
+  
 end
 
 
